@@ -1,5 +1,6 @@
 <script setup lang="ts">
 useHead({
+  title: "Om guh",
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
   ],
@@ -20,7 +21,21 @@ useSeoMeta({
 
 <template>
   <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
+
+
+<!-- <template>
+  <AppHeader />
+
+  <UMain>
+    <NuxtPage />
+  </UMain>
+
+  <AppFooter />
+
+  <UNotifications />
+</template> -->
