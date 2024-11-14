@@ -7,11 +7,17 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/fonts',
     '@nuxt/image',
-    '@nuxt/ui'
+    '@nuxt/ui',
+    'usebootstrap',
+    'nuxt-bootstrap-icons',
+    'nuxt-aos',
+    '@pinia/nuxt',
   ],
 
   routeRules: {
     // Temporary workaround for prerender regression. see https://github.com/nuxt/nuxt/issues/27490
     '/': { prerender: true }
   },
+  css:['@/assets/css/style.css'],
+  
 })
