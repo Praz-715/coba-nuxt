@@ -25,6 +25,7 @@
     "nuxt-aos": "^1.2.5",
     "nuxt-bootstrap-icons": "^2.1.0",
     "nuxt-easy-lightbox": "^1.0.2",
+    "swiper": "^11.1.14",
     "usebootstrap": "^3.5.100",
     "vue": "latest",
     "vue-router": "latest"

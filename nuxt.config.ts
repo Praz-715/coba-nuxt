@@ -31,7 +31,14 @@ export default defineNuxtConfig({
     // Temporary workaround for prerender regression. see https://github.com/nuxt/nuxt/issues/27490
     '/': { prerender: true }
   },
-  css: ['bootstrap/dist/css/bootstrap.min.css','glightbox/dist/css/glightbox.css','@/assets/css/style.css'],
+  css: [
+    'bootstrap/dist/css/bootstrap.min.css', 
+    'swiper/css',
+    'swiper/css/navigation',
+    'swiper/css/pagination',
+    'swiper/css/scrollbar', 
+    'glightbox/dist/css/glightbox.css', 
+    '~/assets/css/style.css'],
 
   plugins: [
     { src: '~/plugins/isotope.js', mode: 'client' },  // Pastikan ini hanya berjalan di sisi klien

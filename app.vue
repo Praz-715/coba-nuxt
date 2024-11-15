@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: "Om guh",
+  title: "Natural Sweetness For the Future",
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
   ],
@@ -13,8 +13,11 @@ useHead({
 })
 
 useSeoMeta({
-  ogImage: 'https://landing-template.nuxt.dev/social-card.png',
-  twitterImage: 'https://landing-template.nuxt.dev/social-card.png',
+  ogTitle: 'Natural Sweetness For the Future',
+  ogImage: 'https://coba-nuxt-tau.vercel.app/assets/img/why-us.jpeg',
+  description: 'The finest natural quality in every grain of palm sugar',
+  ogDescription: 'The finest natural quality in every grain of palm sugar',
+  twitterImage: 'https://coba-nuxt-tau.vercel.app/assets/img/why-us.jpeg',
   twitterCard: 'summary_large_image'
 })
 </script>
