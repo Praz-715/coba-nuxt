@@ -20,9 +20,23 @@ useSeoMeta({
   twitterImage: 'https://coba-nuxt-tau.vercel.app/assets/img/why-us.jpeg',
   twitterCard: 'summary_large_image'
 })
+
+
+const nuxtApp = useNuxtApp();
+const show = ref(true);
+
+nuxtApp.hook("page:start", () => {
+    show.value = true;
+  });
+  nuxtApp.hook("page:finish", () => {
+    show.value = false;
+  });
 </script>
 
 <template>
+  <div id="preloader" v-show="show">
+    <!-- Loading... -->
+  </div>
   <div>
     <NuxtLayout>
       <NuxtPage />

@@ -9,12 +9,12 @@ onMounted(() => {
     document.body.classList.add('index-page');
 
     // Menangani preloader
-    const preloader = document.querySelector('#preloader');
-    if (preloader) {
-        window.addEventListener('load', () => {
-            preloader.remove();
-        });
-    }
+    // const preloader = document.querySelector('#preloader');
+    // if (preloader) {
+    //     window.addEventListener('load', () => {
+    //         preloader.remove();
+    //     });
+    // }
 
     // Toggle Scrolled Class on Body
     const toggleScrolled = () => {
